@@ -1,0 +1,9 @@
+{
+    "chromeWebSecurity": false,
+"defaultCommandTimeout": 15000,
+"execTimeout": 60000,
+"pageLoadTimeout": 180000,
+"requestTimeout": 60000,
+"responseTimeout": 60000,
+"screenshotOnRunFailure": false
+}

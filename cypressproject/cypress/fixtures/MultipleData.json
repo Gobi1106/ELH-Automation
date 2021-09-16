@@ -1,0 +1,17 @@
+
+{
+     "Fieldsdata":
+      [{
+        "Firstname": "Archana",
+        "Lastname": "Lingampalli",
+        "Email":"archanalingampalli@gmail.com",
+        "Gender":"Female",
+        "MobileNumber":"7895415548",
+       "Dateofbirth": "14 Oct 2021",
+        "Hobbies":[{
+            "hobby1":"Sports",
+            "hobby2":"Reading"
+        }]
+
+     }]
+}
