@@ -1,0 +1,49 @@
+{
+     "Regno":
+     [{
+        "Firstname": "srini",
+        "Lastname": "s",
+        "Address":"Durga nagar,Tambaram",
+        "Email":"srini02@gmail.com",
+        "Phno":"7895431223",
+        "Gender":"Male",
+        
+        "Hobbies": [{
+                     "cricket":"Cricket",
+                     "movies":"Movies"
+                    }],
+        "SelectCountry":"India",
+        "Year":"2005",
+        "Substryear":"5",
+        "Month":"April",
+        "Password":"Srini02!",
+        "ConfirmPassword":"Srini02!"
+     },
+     {
+     "Firstname": "gokul",
+     "Lastname": "f",
+     "Address":"Dilli street,Egmore",
+     "Email":"gokul24@gmail.com",
+     "Phno":"8897612399",
+     "Gender":"Male",
+     "Hobbies": [{
+        "cricket":"Cricket",
+        "movies":"Movies"
+     }],
+     "SelectCountry":"India",
+     "Year":"2002",
+     "Substryear":"5",
+     "Month":"June",
+     "Password":"gokul134$",
+     "ConfirmPassword":"gokul134$"
+     }]
+
+    }
+
+
+
+
+
+
+
+
