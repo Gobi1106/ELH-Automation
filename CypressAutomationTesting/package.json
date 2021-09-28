@@ -10,6 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^8.2.0",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "node-xlsx": "^0.17.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.1",
+    "momentjs": "^2.0.0",
+    "xlsx": "^0.17.2"
   }
 }
