@@ -1,16 +1,13 @@
 
 import register from '../support/POM/register'
 import readExcelMain from '../integration/readExcelMain'
-import data from '../fixtures/data.json'
-import moment from'../fixtures/date.json'
-import moment from'../fixtures/Excel/'
 /// <reference types="Cypress" />
 
 //const test= require('../fixtures/jsondata/data.json')
 import "cypress-xpath"
 import iframe from '../support/POM/iframe';
 describe('Test Suite', ()=>{
-   
+
    beforeEach(function(){
       cy.viewport(1920,1080)
    })
@@ -43,7 +40,7 @@ describe('Test Suite', ()=>{
    password=test.Regno[i].Password
    confirmpwd=test.Regno[i].ConfirmPassword
 
-    cy.visit("")
+    cy.visit("http://demo.automationtesting.in/Register.html")
     register.typefirstname(firstname)
     register.typelastname(lastname)
     register.typeaddress()
@@ -69,30 +66,35 @@ it('iframe',function(){
 
 })
 
-it.only('jsondata',function(){
-   const datares=readExcelMain.generateJsonFromExcel()
-   console.log(datares)
-   cy.log(datares)
-
-
-})
-
 it('date',function(){
    cy.visit("http://demo.automationtesting.in/Datepicker.html")
 
-        const moment= require('moment')
-         //const moment = require('..//fixtures/date.json');
-           var date = new Date();
-           var last = new Date(date.getTime() + (2 * 24 * 60 * 60 * 1000));
-           cy.log("last"+last)
-           var month = last.getMonth() + 1
-           cy.log(month)
-           var lastNew = last.getDate() + " " + month + " " + last.getFullYear()
-           cy.log(lastNew)
-           let dateToSelect = moment(lastNew, "DD MM YYYY").format("MM/DD/YYYY")
-           cy.log(dateToSelect)
-           cy.get("input#datepicker1").
-           click().type(dateToSelect,{force: true})
+   cy.get("input#datepicker1").
+   click().type(getdate(),{ force: true })
+   function getdate(){
+
+   var dob;
+   //set a range of years
+   var min = 2018;
+   var max = 2021;
+   
+   // Math.ceil prevents the value from being 0;
+   var month = Math.ceil(Math.random() * 12);
+   var day = Math.ceil(Math.random() * 28);
+   var year = Math.floor(Math.random() * (max - min) + min);
+   
+   //this ensures that the format will stay mm/dd/yyyy;
+   if(month < 10) {
+      month = "0" + month;
+   }
+   if(day < 10) {
+      day = "0" + day;
+   }
+   //concatenates random dob in mm/dd/yyyy format;
+   dob = month + "/" + day + "/" + year;
+   
+   return dob;
+   }
 })
 
  })

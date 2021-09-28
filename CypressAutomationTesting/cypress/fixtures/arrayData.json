@@ -28,7 +28,8 @@
      "Gender":"Male",
      "Hobbies": [{
         "cricket":"Cricket",
-        "movies":"Movies"
+        "movies":"Movies",
+        "hockey":"Hockey"
      }],
      "SelectCountry":"India",
      "Year":"2002",
