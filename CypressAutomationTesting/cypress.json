@@ -1,3 +1,21 @@
-{    
+{
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 15000,
+    "execTimeout": 60000,
+    "pageLoadTimeout": 180000,
+    "requestTimeout": 60000,
+    "responseTimeout": 60000,
+    "video": false,
+    "screenshotsFolder": "cypress/screenshots",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "Cypress Automation Test Report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "inline": true,
+        "code": false
+    }
 }
-

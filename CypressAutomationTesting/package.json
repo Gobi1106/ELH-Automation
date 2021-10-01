@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ".\\node_modules\\.bin\\cypress open"
+    "test": ".\\node_modules\\.bin\\cypress open",
+    "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/mochareport/output.json",
+    "generate_mocha_report": "marge cypress/reports/mochareport/output.json --reportDir ./ --inline",
+    "final_report": "npm run merge && npm run generate_mocha_report"
   },
   "author": "william",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^8.2.0",
     "cypress-xpath": "^1.6.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
     "node-xlsx": "^0.17.1"
   },
   "dependencies": {

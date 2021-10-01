@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-01T05:20:21.637Z",
+    "end": "2021-10-01T05:20:39.334Z",
+    "duration": 17697,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6fbf2585-4036-4d42-98c7-2f040f9b4dc9",
+      "title": "",
+      "fullFile": "cypress/integration/sampleReport/weatherApi.js",
+      "file": "cypress/integration/sampleReport/weatherApi.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6f92bbe-96fd-44d3-a495-9b0e2c22b2b9",
+          "title": "Weather Api Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Api Testing Iterate Array value",
+              "fullTitle": "Weather Api Test Api Testing Iterate Array value",
+              "timedOut": null,
+              "duration": 17466,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "36b177b2-5dea-430b-899f-04eaaa456799",
+              "parentUUID": "a6f92bbe-96fd-44d3-a495-9b0e2c22b2b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "36b177b2-5dea-430b-899f-04eaaa456799"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17466,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Cypress Automation Test Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "Cypress Automation Test Report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "inline": true,
+        "code": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
