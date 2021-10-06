@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-06T10:24:50.650Z",
+    "end": "2021-10-06T10:25:56.776Z",
+    "duration": 66126,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "908f5931-71a0-4a24-a8be-730777adf74a",
+      "title": "",
+      "fullFile": "cypress/integration/SampleTestforReports/Alertsspec.js",
+      "file": "cypress/integration/SampleTestforReports/Alertsspec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "76e81faf-8690-45f6-9ac5-908845b9fd7c",
+          "title": "keywords",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alerts website",
+              "fullTitle": "keywords Alerts website",
+              "timedOut": null,
+              "duration": 42047,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "alert.alertsurl();",
+              "err": {},
+              "uuid": "4f7bfdf3-728e-4a80-a202-beb2ee5fe612",
+              "parentUUID": "76e81faf-8690-45f6-9ac5-908845b9fd7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alert buttons",
+              "fullTitle": "keywords Alert buttons",
+              "timedOut": null,
+              "duration": 16802,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "alert.clickalertpopupbutton();\nalert.clickconfirmpopupbutton();",
+              "err": {},
+              "uuid": "972c466a-7b69-4afa-ba54-ea44dcf2a2f4",
+              "parentUUID": "76e81faf-8690-45f6-9ac5-908845b9fd7c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f7bfdf3-728e-4a80-a202-beb2ee5fe612",
+            "972c466a-7b69-4afa-ba54-ea44dcf2a2f4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 58849,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Cypress Automation Test Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "Cypress Automation Test Report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "code": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

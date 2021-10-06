@@ -33,7 +33,7 @@ describe('TestSuite', () => {
       }
        
       )
-      it('Verifying the alerts', () => {
+      it.skip('Verifying the alerts', () => {
         loginpage.alertsurl()
         loginpage.clickalertpopupbutton()
         loginpage.clickconfirmpopupbutton()

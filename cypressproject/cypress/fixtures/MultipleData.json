@@ -11,7 +11,29 @@
         "Hobbies":[{
             "hobby1":"Sports",
             "hobby2":"Reading"
-        }]
+        }],
+       "filepath":"Images/Picture1.png",
+      "address": "Anantapur,AP",
+      "State":"NCR"
+    },
 
-     }]
-}
+     {
+       "Firstname": "Sruthi",
+       "Lastname": "Lingampalli",
+       "Email":"sruthilingampalli@gmail.com",
+       "Gender":"Female",
+       "MobileNumber":"8745965544",
+      "Dateofbirth": "12 Nov 2021",
+       "Hobbies":[{
+           "hobby1":"Sports",
+           "hobby2":"Reading"
+       }],
+      "filepath":"Images/Picture1.png",
+     "address": "AndhraPradesh",
+     "State":"NCR"
+       }] 
+    }
+  
+  
+  
+

@@ -4,17 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+ 
+    "scripts": "cypress run",
+    "merge": "mochawesome-merge ./cypress/reports/*.json > ./cypress/reports/mochareports/output.json",
+    "generate_mocha_report": "marge cypress/reports/mochareports/output.json --reportDir ./ --inline",
+    "posttest": "npm run merge && npm run generate_mocha_report",
+    "finaltest" : "npm run scripts || npm run posttest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^3.8.2",
+
     "cypress": "^8.2.0",
+    "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
-    "cypress-xpath": "^1.6.2"
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "node-xlsx": "^0.17.2"
   },
   "dependencies": {
+    "cypress-multi-reporters": "^1.5.0",
+    "iframe": "^1.0.0",
+    "moment": "^2.29.1",
+    "react-moment": "^1.1.1",
     "soft-assert": "^0.2.6"
   }
 }

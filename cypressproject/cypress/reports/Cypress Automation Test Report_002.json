@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-06T10:26:02.593Z",
+    "end": "2021-10-06T10:26:03.245Z",
+    "duration": 652,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8eab1f40-537b-436f-afb0-f5f92bfbe09e",
+      "title": "",
+      "fullFile": "cypress/integration/SampleTestforReports/json.js",
+      "file": "cypress/integration/SampleTestforReports/json.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "822f988c-5c20-457c-b83b-46f619960f20",
+          "title": "Demopage register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "demotesting",
+              "fullTitle": "Demopage register demotesting",
+              "timedOut": null,
+              "duration": 550,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"./assets/json.js/Demopage register -- demotesting (failed).png\"",
+              "code": "cy.viewport(1920, 1080);\ncy.wait(2000);\njsonpractice.demotestingurl(); // cy.screenshot('complete')\njsonpractice.demofirstname(fname); // cy.screenshot({ capture: \"fullPage\" });\n//cy.screenshot('firstname successfully entered')\njsonpractice.demolastname(lname1);\njsonpractice.demoaddress(Address2);\njsonpractice.demoemail(email1);\njsonpractice.demogender(gendernew);\njsonpractice.demohobbies(hobby);\njsonpractice.demolanguages(language); //jsonpractice.demoskills()\n// jsonpractice.qaframe()",
+              "err": {
+                "message": "AssertionError: expected 'FeMale' to have a length of 5 but got 6",
+                "estack": "AssertionError: expected 'FeMale' to have a length of 5 but got 6\n    at Jsonpractice.demogender (http://localhost:60153/__cypress/tests?p=cypress\\integration\\SampleTestforReports\\json.js:159:28)\n    at Context.eval (http://localhost:60153/__cypress/tests?p=cypress\\integration\\SampleTestforReports\\json.js:263:18)",
+                "diff": "- 6\n+ 5\n"
+              },
+              "uuid": "7dd78bfd-ef85-492e-8530-b21a4c3f7077",
+              "parentUUID": "822f988c-5c20-457c-b83b-46f619960f20",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7dd78bfd-ef85-492e-8530-b21a4c3f7077"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 550,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Cypress Automation Test Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "Cypress Automation Test Report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "code": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,9 +1,24 @@
+
 {
-    "chromeWebSecurity": false,
-"defaultCommandTimeout": 15000,
+    "defaultCommandTimeout": 15000,
 "execTimeout": 60000,
 "pageLoadTimeout": 180000,
 "requestTimeout": 60000,
 "responseTimeout": 60000,
-"screenshotOnRunFailure": false
+
+"video":false,
+"integrationFolder":"cypress/integration/SampleTestforReports",
+"screenshotsFolder":"cypress/reports/assets",
+"screenshotOnRunFailure": true,
+"reporter": "mochawesome",
+"reporterOptions": {
+"reportDir": "cypress/reports",
+"reportFilename": "Cypress Automation Test Report",
+"overwrite": false,
+"html": true,
+"json": true,
+"code": true,
+"charts": true
+ }
+ 
 }

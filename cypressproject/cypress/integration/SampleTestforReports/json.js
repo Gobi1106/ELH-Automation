@@ -1,12 +1,15 @@
 import "cypress-xpath"
-import Jsonpractice from "../SampleTestforReports/Jsonpractice"
+import Jsonpractice from "./Jsonpractice"
 
 /// <reference types = "cypress" />
-
-describe('automation testing demo', () => {
+//cy.screenshot({ capture: 'fullPage' });
+ 
+describe('Demopage register', () => {
+  
 var fname,lname1,Address2,email1,gendernew,hobby,language
   const jsonpractice = new Jsonpractice()
-
+  
+ // const webtable = new WebTable()
  beforeEach(function(){
   Cypress.Screenshot.defaults({
     capture: 'runner',
@@ -25,10 +28,10 @@ var fname,lname1,Address2,email1,gendernew,hobby,language
             language=this.data.languages;
     })
 })
-//code to run fullscreen in screenshot
 
-
-      it('Register page', function() {      
+      it('demotesting', function() { 
+        cy.viewport(1920,1080) 
+        cy.wait(2000)   
         jsonpractice.demotestingurl()
        // cy.screenshot('complete')
         jsonpractice.demofirstname(fname)
@@ -41,10 +44,11 @@ var fname,lname1,Address2,email1,gendernew,hobby,language
          jsonpractice.demohobbies(hobby)
          jsonpractice.demolanguages(language)
          //jsonpractice.demoskills()
+        // jsonpractice.qaframe()
       })
-      it('demotesting page for frames', function() {
+     /* it('demotesting for frames', function() {
        
         jsonpractice.qaframe()
         
-          })  
+          }) */
           })

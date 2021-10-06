@@ -17,6 +17,34 @@
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
+//require('cypress-mochawesome-reporter/plugin')(on);
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+/*const xlsx = require('node-xlsx').default;
+const fs = require('fs'); // for file
+const path = require('path'); // for filepath
+module.exports = (on,config) => {
+  on('task', {
+    parseXlsx({ filePath }) {
+      return new Promise((resolve, reject) => {
+        try 
+        {
+          const jsonData = xlsx.parse(fs.readFileSync(filePath));
+          resolve(jsonData);
+        } catch (e) 
+        {
+          reject(e);
+        }
+      });
+    }
+  });
+}
+       const readXlsx = require('./read-xlsx')
+
+module.exports =(on, config)=>{
+  on('task', {
+    'readXlsx': readXlsx.read
+  })
+}*/

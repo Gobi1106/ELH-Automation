@@ -11,6 +11,7 @@ class Keywords{
         cy.log(" Successfully page refreshed")
         cy.get('#firstName').type(firstname)
         cy.clearCookies()
+        cy.screenshot('firstname successfully entered')
     }
    
 
@@ -35,13 +36,7 @@ const add = cy.xpath('//textarea[@id="currentAddress"]').type(address)
 //add.and('eq',address)
 }
 
-qaframe()
-{
-   cy.wait(3000)
-    cy.visit('http://demo.automationtesting.in/Frames.html')
-    cy.request('/Frames.html')
-  const frame= cy.iframe("#singleframe").xpath('//input[@type="text"]')
-   frame.type('frame')
+
 
 //nested frame
 /*cy.xpath('(//a[@class="analystic"])[2]').click()
@@ -55,7 +50,7 @@ frame1.xpath('//input[@type="text"]').type('nestedframe')
 
    
    
-}
+
 qadatepicker()
 {
     cy.visit('http://demo.automationtesting.in/Datepicker.html')
