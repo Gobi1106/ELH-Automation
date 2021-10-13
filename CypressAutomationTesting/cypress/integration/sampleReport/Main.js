@@ -1,5 +1,7 @@
+
 import register from '../../support/POM/register'
 /// <reference types="Cypress" />
+
 import "cypress-xpath"
 import iframe from '../../support/POM/iframe';
 describe('Test Suite', () => {
@@ -25,6 +27,7 @@ describe('Test Suite', () => {
          hobbies2 = JSON.stringify(test.Regno[i].Hobbies[0].movies)
          cy.log(hobbies1)
          cy.log(hobbies2)
+
          month = test.Regno[i].Month
          year = test.Regno[i].Year
          substryear = test.Regno[i].Substryear
@@ -56,33 +59,22 @@ describe('Test Suite', () => {
       iframe.singleframe()
 
    })
+
    it('date', function () {
       cy.visit("http://demo.automationtesting.in/Datepicker.html")
 
+      const moment = require('moment')
+      var date = new Date();
+      var last = new Date(+(new Date()) + Math.floor(Math.random() * 100000000000));
+      cy.log("last" + last)
+      var month = last.getMonth() + 1
+      cy.log(month)
+      var lastNew = last.getDate() + " " + month + " " + last.getFullYear()
+      cy.log(lastNew)
+      let dateToSelect = moment(lastNew, "DD MM YYYY").format("MM/DD/YYYY")
+      cy.log(dateToSelect)
       cy.get("input#datepicker1").
-         click().type(getdate(), { force: true })
-      function getdate() {
-         var dob;
-         //set a range of years
-         var min = 2018;
-         var max = 2021;
-
-         // Math.ceil prevents the value from being 0;
-         var month = Math.ceil(Math.random() * 12);
-         var day = Math.ceil(Math.random() * 28);
-         var year = Math.floor(Math.random() * (max - min) + min);
-
-         //this ensures that the format will stay mm/dd/yyyy;
-         if (month < 10) {
-            month = "0" + month;
-         }
-         if (day < 10) {
-            day = "0" + day;
-         }
-         //concatenates random dob in mm/dd/yyyy format;
-         dob = month + "/" + day + "/" + year;
-         return dob;
-      }
+         click().type(dateToSelect, { force: true })
    })
 
 })

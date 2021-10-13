@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": ".\\node_modules\\.bin\\cypress open",
+    "testcase_report":".\\node_modules\\.bin\\cypress run --spec cypress//integration//sampleReport//*.js",
     "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/mochareport/output.json",
     "generate_mocha_report": "marge cypress/reports/mochareport/output.json --reportDir ./ --inline",
     "final_report": "npm run merge && npm run generate_mocha_report"

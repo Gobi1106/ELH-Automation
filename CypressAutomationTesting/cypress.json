@@ -6,7 +6,8 @@
     "requestTimeout": 60000,
     "responseTimeout": 60000,
     "video": false,
-    "screenshotsFolder": "cypress/screenshots",
+    "screenshotsFolder": "cypress/reports/assets",
+    "screenshotOnRunFailure": true,
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/reports",
@@ -15,7 +16,6 @@
         "html": true,
         "json": true,
         "charts": true,
-        "inline": true,
         "code": false
     }
 }

@@ -29,7 +29,6 @@ class register {
 
     typeaddress() {
         this.elements.address().type(userADDRESS())
-        //.should('have.value',adr)
         function userADDRESS() {
             var text = "";
             var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -42,8 +41,6 @@ class register {
     }
 
     typeemail() {
-        //   this.elements.email().type(email).as('emailid')
-        //   cy.log(this.emailid)
         this.elements.email().type(userEMAILID() + "@gmail.com")
         function userEMAILID() {
             var emailval = "";
@@ -74,7 +71,6 @@ class register {
         cy.screenshot("Gender method passed")
 
     }
-
     typehobbies(hobbies1, hobbies2) {
         cy.log(hobbies1)
         hob1 = hobbies1.replace(/"+/g, "");
@@ -83,12 +79,7 @@ class register {
 
         cy.get('[value="' + hob1 + '"]').should('not.be.checked').click()
         cy.get('[value="' + hob2 + '"]').should('not.be.checked').click()
-        // cy.get('[value='+hobbies3+']').should('not.be.checked').click()
-
-        //Alias
-        //cy.get('@hobby').click()
     }
-
     typeselectCountry(selectCountry) {
         cy.get('#country[tabindex="-1"]>option').invoke('text').then((selcountry) => {
             cy.log(selcountry)
@@ -96,14 +87,11 @@ class register {
             cy.log(abc)
         })
     }
-
     typeyear(year, substryear) {
         cy.get('#yearbox>option').invoke('text').then(function (yr) {
             cy.log(yr.includes("2002"))
             cy.log(yr.search('1997'))
             newStr = yr.substring(substryear)
-            //This will return only the character by index in String format EX: year
-            //newStr = yr.substr(0,5)
             cy.log(newStr)
             arryr = newStr.match(/.{1,4}/g)
             res = arryr.find(arrelement => arrelement == (year))
@@ -123,7 +111,6 @@ class register {
             cy.get("[placeholder='Month']").select(resmon)
         })
     }
-
     typeday() {
         cy.get("#daybox>option").invoke('text').then((day) => {
             daysub = day.substring(4);
@@ -159,7 +146,6 @@ class register {
             cy.log("Need to use special characters for confirmpassword")
         }
     }
-
     randomDate() {
         cy.get("input#datepicker1").
             click().type(getdate(), { force: true })
@@ -180,7 +166,9 @@ class register {
             }
             var today = mm + '/' + dd + '/' + yyyy;
             return today
+
         }
     }
+
 }
 module.exports = new register();
